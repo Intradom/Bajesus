@@ -367,6 +367,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &498198578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7293223432806025595, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+    type: 3}
+  m_PrefabInstance: {fileID: 3863059224760969905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +903,7 @@ GameObject:
   - component: {fileID: 1664668632}
   - component: {fileID: 1664668631}
   m_Layer: 0
-  m_Name: Test_background
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1279,10 +1285,47 @@ PrefabInstance:
       propertyPath: m_AirControl
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3863059225182275826, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLanding
+      objectReference: {fileID: 0}
     - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
         type: 3}
       propertyPath: walk_speed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: left_mouse_spawn
+      value: 
+      objectReference: {fileID: 4055878254850920641, guid: f7bdcf6721345e74ba644a86e1605d24,
+        type: 3}
+    - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: right_mouse_spawn
+      value: 
+      objectReference: {fileID: 478903254633741675, guid: bd85a37d00a002a41b23959a279508e1,
+        type: 3}
+    - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: shoot_location
+      value: 
+      objectReference: {fileID: 498198578}
+    - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: boosted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863059225182275827, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: strong_boost_speed_mult
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863059225182275724, guid: 01e031fa4c2c04c458cab76f05b9fb66,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01e031fa4c2c04c458cab76f05b9fb66, type: 3}
@@ -1495,7 +1538,7 @@ PrefabInstance:
     - target: {fileID: 3642715330262763213, guid: dcb50f3fdc14ec64cbb891b5d91ec89c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.11
+      value: -8.86
       objectReference: {fileID: 0}
     - target: {fileID: 3642715330262763213, guid: dcb50f3fdc14ec64cbb891b5d91ec89c,
         type: 3}

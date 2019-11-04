@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3112753995149953215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7293223432806025595}
+  m_Layer: 0
+  m_Name: shoot_point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7293223432806025595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112753995149953215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 2.54, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3863059225182275727}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3863059223890645288
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,6 +96,7 @@ Transform:
   m_Children:
   - {fileID: 3863059223890645291}
   - {fileID: 3863059225371772308}
+  - {fileID: 7293223432806025595}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f868e2b374a3e04781c4a197d4a8586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
+  m_JumpForce: 500
+  m_CrouchSpeed: 0.35
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -145,7 +176,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3863059225182275827}
-        m_MethodName: on_landing
+        m_MethodName: OnLanding
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -172,7 +203,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 3863059225182275826}
   animator: {fileID: 3863059225182275829}
-  walk_speed: 10
+  walk_speed: 20
+  left_mouse_spawn: {fileID: 6654285749702424672, guid: f7bdcf6721345e74ba644a86e1605d24,
+    type: 3}
+  right_mouse_spawn: {fileID: 478903254633741675, guid: bd85a37d00a002a41b23959a279508e1,
+    type: 3}
+  shoot_location: {fileID: 7293223432806025595}
+  boosted: 0
+  orb_cd_seconds: 0.5
+  boost_time_seconds: 0.5
+  strong_boost_speed_mult: 2
+  weak_boost_speed_mult: 1.5
 --- !u!50 &3863059225182275824
 Rigidbody2D:
   serializedVersion: 4
